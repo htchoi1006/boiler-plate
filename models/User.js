@@ -9,6 +9,10 @@ const userSchema = mongoose.Schema({
         type: String,
         trim: true, //space 없애주는 역할
     },
+    password:{
+        type: String,
+        minlength: 5
+    },
     lastname: {
         type: String,
         maxlength: 50
